@@ -1,0 +1,21 @@
+{
+  "name": "151018_node_createjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "socket.io": "^1.3.2"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.10",
+    "imagemagick": "^0.1.3",
+    "oauth": "^0.9.12",
+    "rememberequest": "^2.51.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

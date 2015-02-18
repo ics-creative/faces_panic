@@ -1,0 +1,247 @@
+
+a:hover {
+  border: none;
+  text-decoration: none;
+}
+
+#wrapper {
+  .window {
+    position: absolute;
+    left: 50%;
+    top: -50%;
+    width: 400px;
+    height: 400px;
+    margin-left: -200px;
+    margin-top: -200px;
+  }
+
+  .firstWindow {
+    top: 50%;
+  }
+
+  #generateWindow {
+    height: 440px;
+    margin-top: -220px;
+  }
+
+  #twitterID {
+    width: 260px;
+    height: 90px;
+    font-size: 3.0rem;
+    margin-top: 10px;
+  }
+
+  .thumbList {
+    margin-top: 10px;
+
+    a {
+      -webkit-tap-highlight-color:rgba(255,0,0,0);
+      width: 73px;
+      height: 73px;
+      display: block;
+
+      border: #fff9ef 2px solid;
+
+      transition: 0.2s;
+
+
+      &.on {
+        border: #ff4b29 2px solid;
+        -webkit-transform: scale(1.2,1.2);
+        transform: scale(1.2,1.2);
+      }
+    }
+
+
+
+    &:first-of-type {
+      margin-top: 20px;
+    }
+
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    width: (73 + 4)*4+px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+
+    li {
+      width: 73px;
+      margin-left: 2px;
+      margin-right: 2px;
+    }
+  }
+}
+
+#consoleText2 {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+#loading {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.ball1 {
+  background-color: rgba(0, 0, 0, 0);
+  border: 6px solid rgba(255, 250, 236, 0.90);
+  opacity: .9;
+
+  border-top: 6px solid rgba(0, 0, 0, 0);
+  border-left: 6px solid rgba(0, 0, 0, 0);
+  border-radius: 50%;
+  //  box-shadow: 0 0 15px #2187e7;
+
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  margin-left: -15px;
+  margin-top: -15px;
+}
+
+#floatingCirclesG {
+  position: absolute;;
+  width: 49px;
+  height: 49px;
+  top: 50%;
+  left: 50%;
+  margin-left: -24px;
+  margin-top: -25px;
+  -moz-transform: scale(0.6);
+  -webkit-transform: scale(0.6);
+  transform: scale(0.6);
+}
+
+.f_circleG {
+  position: absolute;
+  background-color: #FFFFFF;
+  height: 9px;
+  width: 9px;
+  -moz-border-radius: 4px;
+  -moz-animation-name: f_fadeG;
+  -moz-animation-duration: 0.32s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-direction: linear;
+  -webkit-border-radius: 4px;
+  -webkit-animation-name: f_fadeG;
+  -webkit-animation-duration: 0.32s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: linear;
+  border-radius: 4px;
+  animation-name: f_fadeG;
+  animation-duration: 0.32s;
+  animation-iteration-count: infinite;
+  animation-direction: linear;
+}
+
+#frotateG_01 {
+  left: 0;
+  top: 20px;
+  -moz-animation-delay: 0.12s;
+  -webkit-animation-delay: 0.12s;
+  animation-delay: 0.12s;
+}
+
+#frotateG_02 {
+  left: 6px;
+  top: 6px;
+  -moz-animation-delay: 0.16s;
+  -webkit-animation-delay: 0.16s;
+  animation-delay: 0.16s;
+}
+
+#frotateG_03 {
+  left: 20px;
+  top: 0;
+  -moz-animation-delay: 0.2s;
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+#frotateG_04 {
+  right: 6px;
+  top: 6px;
+  -moz-animation-delay: 0.24s;
+  -webkit-animation-delay: 0.24s;
+  animation-delay: 0.24s;
+}
+
+#frotateG_05 {
+  right: 0;
+  top: 20px;
+  -moz-animation-delay: 0.28s;
+  -webkit-animation-delay: 0.28s;
+  animation-delay: 0.28s;
+}
+
+#frotateG_06 {
+  right: 6px;
+  bottom: 6px;
+  -moz-animation-delay: 0.32s;
+  -webkit-animation-delay: 0.32s;
+  animation-delay: 0.32s;
+}
+
+#frotateG_07 {
+  left: 20px;
+  bottom: 0;
+  -moz-animation-delay: 0.36s;
+  -webkit-animation-delay: 0.36s;
+  animation-delay: 0.36s;
+}
+
+#frotateG_08 {
+  left: 6px;
+  bottom: 6px;
+  -moz-animation-delay: 0.4s;
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+@-moz-keyframes f_fadeG {
+  0% {
+    background-color: #000000
+  }
+
+  100% {
+    background-color: #FFFFFF
+  }
+
+}
+
+@-webkit-keyframes f_fadeG {
+  0% {
+    background-color: #000000
+  }
+
+  100% {
+    background-color: #FFFFFF
+  }
+
+}
+
+@keyframes f_fadeG {
+  0% {
+    background-color: #000000
+  }
+
+  100% {
+    background-color: #FFFFFF
+  }
+
+}
+
+
+
+

@@ -1,0 +1,100 @@
+@charset "UTF-8";
+/* --------------------------------------
+   リセットCSS
+  -------------------------------------- */
+*:not(input) {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  background: transparent; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal; }
+
+ul {
+  list-style: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+a:hover {
+  border: none;
+  text-decoration: none; }
+
+strong {
+  font-weight: bold;
+  font-style: normal; }
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0; }
+
+html {
+  font-size: 62.5%; }
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background-color: #2D2D2D;
+  overflow-x: hidden; }
+
+body {
+  color: #333333;
+  font-family: "Hiragino Kaku Gothic Pro", "Osaka", "Meiryo", "MS PGothic", sans-serif;
+  font-size: 14px;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  background: #fff9ef;
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #fff9ef), color-stop(98%, #fff5e2));
+  background: -webkit-radial-gradient(center, ellipse cover, #fff9ef 0%, #fff5e2 98%);
+  background: radial-gradient(ellipse at center, #fff9ef 0%, #fff5e2 98%);
+  background-size: 100% 100%; }
+
+a {
+  color: #333333; }
+
+.button {
+  border: 1px solid #d1cca3;
+  background: #747474;
+  margin-left: auto;
+  margin-right: auto;
+  background: linear-gradient(to bottom, rgba(255, 249, 239, 0.2) 1%, rgba(255, 245, 226, 0.2) 100%);
+  cursor: pointer;
+  line-height: 3.1rem;
+  font-size: 2.2rem; }
+
+#generateButton {
+  width: 240px;
+  font-weight: bold; }
+
+#pairingMessage {
+  display: none; }
+
+#twitterID {
+  width: 300px;
+  height: 90px;
+  font-size: 4.0rem; }
+
+#wrapper {
+  height: 100%;
+  text-align: center;
+  position: relative; }
+  #wrapper .window {
+    border-radius: 5px;
+    background-color: rgba(255, 249, 239, 0.1);
+    box-shadow: 0px 0px 8.64px 0.36px rgba(0, 0, 0, 0.16); }
+    #wrapper .window > * {
+      margin-top: 20px; }
+
+/*# sourceMappingURL=base.css.map */

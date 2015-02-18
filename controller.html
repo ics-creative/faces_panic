@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0"/>
+    <meta charset="UTF-8">
+    <title>Faces Panic コントローラー</title>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/controller.css"/>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="libs/jquery-2.1.1.min.js"></script>
+    <script data-main="js/controller.js" src="libs/require.js"></script>
+</head>
+<body>
+<div id="wrapper">
+    <div id="generateWindow" class="firstWindow window">
+        <ul class="thumbList">
+            <li><a href="@clockmaker">
+                    <img src="http://pbs.twimg.com/profile_images/566245889291735041/C8xImObV_bigger.jpeg" alt=""/>
+                </a>
+               </li>
+            <li><a href="@a_24"><img src="http://pbs.twimg.com/profile_images/2697679265/664d9eb608ef4528518c06f4a59e8bda_bigger.png" alt=""/></a></li>
+            <li><a href="@orangesuzuki"><img src="http://pbs.twimg.com/profile_images/550324804482379778/RXIZuvet_bigger.jpeg" alt=""/></a></li>
+            <li><a href="@nyamogera"><img src="http://pbs.twimg.com/profile_images/566244699195719681/Ta05fhlL_bigger.jpeg" alt=""/></a></li>
+        </ul>
+        <ul class="thumbList">
+            <li><a href="@umi_kappa"><img src="http://pbs.twimg.com/profile_images/1276988491/R0011046_bigger.JPG" alt=""/></a></li>
+            <li><a href="@tonkotsuboy_com"><img src="http://pbs.twimg.com/profile_images/470953742276128769/g51mZThZ_bigger.png" alt=""/></a></li>
+            <li><a href="@9ballsyndrome"><img src="http://pbs.twimg.com/profile_images/1568136847/default_profile_4_bigger_bigger.png" alt=""/></a></li>
+            <li><a href="@solo__travel"><img src="http://pbs.twimg.com/profile_images/1131015710/image_bigger.jpg" alt=""/></a></li>
+        </ul>
+        <p id="twitterInfo">twitterIDを指定</p>
+        <input type="text" id="twitterID"/>
+        <div id="generateButton" class="button">画像を加工する</div>
+        <p id="pairingMessage">接続中</p>
+    </div>
+</div>
+<div id="loading">
+    <div id="floatingCirclesG">
+        <div class="f_circleG" id="frotateG_01">
+        </div>
+        <div class="f_circleG" id="frotateG_02">
+        </div>
+        <div class="f_circleG" id="frotateG_03">
+        </div>
+        <div class="f_circleG" id="frotateG_04">
+        </div>
+        <div class="f_circleG" id="frotateG_05">
+        </div>
+        <div class="f_circleG" id="frotateG_06">
+        </div>
+        <div class="f_circleG" id="frotateG_07">
+        </div>
+        <div class="f_circleG" id="frotateG_08">
+        </div>
+    </div>
+</div>
+</body>
+</html>

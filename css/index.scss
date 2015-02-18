@@ -1,0 +1,106 @@
+@charset "UTF-8";
+$small:  "only screen and (max-width:830px)";
+
+#wrapper
+{
+  $pointColor:#ffffff;
+
+  a {
+    color: $pointColor;
+    -webkit-animation: fontColorAnimation 4s linear infinite;
+    animation: fontColorAnimation 4s linear infinite;
+
+  }
+  .window {
+    float: left;
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 400px;
+    height: 360px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    > * {
+      margin-top: 8px;
+    }
+    &:first-child {
+      margin-left: 0;
+    }
+    > p:first-child {
+      margin-top: 0;
+      font-size: 2.6rem;
+      font-weight: bold;
+
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    hr {
+      height: 0;
+      border-left: none;
+      border-right: none;
+      border-top: 1px solid rgba(0,0,0, 1);
+      border-bottom: 1px solid rgba(255,255,255, 0.1);
+      width: 90%;
+      margin: 16px auto 40px;
+
+    }
+
+  }
+
+  [id$="Layer"]
+  {
+    position: absolute;
+  }
+
+  #pairingLayer,
+  #forcePairingLayer
+  {
+    left: 50%;
+    top: 50%;
+  }
+
+  #myCanvasLayer {
+    width: 640px;
+    height: 600px;
+    top: 50%;
+    left: 50%;
+    margin-left: -320px;
+    margin-top: -300px;
+    display: none;
+
+
+
+    #pairingIDText {
+      position: absolute;
+      z-index: 1;
+      bottom: 20px;
+      right: 20px;
+
+    }
+  }
+
+}
+
+#info
+{
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 50%;
+  text-align: center;
+
+}
+
+#myCanvas
+{
+  width: 1980px;
+  height: 1024px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -990px;
+  margin-top: -512px;
+  background-color: #fff;
+  box-shadow: 0px 0px 8.64px 0.36px rgba(0, 0, 0, 0.16);
+}

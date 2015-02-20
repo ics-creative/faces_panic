@@ -3,13 +3,15 @@ var OAuth = require('oauth');
 
 export class OAuthAPI {
     private static _instance:OAuthAPI;
-    private CONSUMER_KEY:string = "Your Consumer Key";
-    private APP_SECRET:string = "Your App Secret";
+
+    // ==== Twitterのアプリ登録による設定に応じて書き換えてください。======
+    private CONSUMER_KEY:string = "your application consumer key";
+    private APP_SECRET:string = "your application secret";
+    private USER_TOKEN:string = "your user token for this app";
+    private USER_SECRET:string = "your user secret for this app";
+    // ==== Twitterのアプリ登録による設定終わり======
+
     private END_POINT:string = "https://api.twitter.com/1.1/";
-    private USER_TOKEN:string = "Your Token";
-    private USER_SECRET:string = "Your Secret";
-
-
     private _oauth;
 
     public static getInstance():OAuthAPI {

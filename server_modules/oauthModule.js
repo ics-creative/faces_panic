@@ -3,11 +3,13 @@ var OAuth = require('oauth');
 var OAuthAPI = (function () {
     function OAuthAPI(caller) {
         if (caller === void 0) { caller = null; }
-        this.CONSUMER_KEY = "Your Consumer Key";
-        this.APP_SECRET = "Your App Secret";
+        // ==== Twitterのアプリ登録による設定に応じて書き換えてください。======
+        this.CONSUMER_KEY = "your application consumer key";
+        this.APP_SECRET = "your application secret";
+        this.USER_TOKEN = "your user token for this app";
+        this.USER_SECRET = "your user secret for this app";
+        // ==== Twitterのアプリ登録による設定終わり======
         this.END_POINT = "https://api.twitter.com/1.1/";
-        this.USER_TOKEN = "Your Token";
-        this.USER_SECRET = "Your Secret";
         if (caller == OAuthAPI.getInstance) {
             this.initOAuth();
         }

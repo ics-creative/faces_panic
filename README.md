@@ -32,6 +32,9 @@ npm install
 ```
 よりインストールしてください。
 
+#### Twitter APIのアプリケーション登録
+Twitterアイコン画像の取得には、Twitter APIのアプリケーション登録が必要です。各設定情報を /server_modules/oauthModule.js に記述してください。
+
 #### デモの起動
 ```sh
 node server
